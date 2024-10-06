@@ -1,0 +1,7 @@
+{
+  "name": "Segunda Competencia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
