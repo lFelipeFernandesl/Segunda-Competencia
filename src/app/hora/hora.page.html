@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data e Hora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Horário atual do Rio de Janeiro:</h2>
+  <p *ngIf="dateTime">{{ dateTime }}</p>
+  <p *ngIf="!dateTime">Carregando...</p>
+
+  <ion-button (click)="goToBack()">Voltar</ion-button>
+</ion-content>

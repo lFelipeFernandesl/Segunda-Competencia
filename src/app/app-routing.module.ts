@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'calendario',
+    loadChildren: () => import('./calendario/calendario.module').then( m => m.CalendarioPageModule)
+  },
+  {
+    path: 'hora',
+    loadChildren: () => import('./hora/hora.module').then( m => m.HoraPageModule)
+  },
 ];
 
 @NgModule({
